@@ -12,7 +12,7 @@
 // estrutura de métodos virtuais
 struct PessoaVtbl;
 
-// tipo Pessoa com subtipo Object 
+// tipo Pessoa com supertipo Object 
 typedef struct Pessoa_
 {
 	Object super;

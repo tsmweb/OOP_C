@@ -15,8 +15,8 @@ Pessoa *Pessoa_new(Pessoa * const self, char *nome, int idade)
 	
 	static struct PessoaVtbl vtbl = { &Pessoa_virtual_imprimi }; 
 
-	self->vptr 	= &vtbl;
-	self->nome 	= nome;
+	self->vptr = &vtbl;
+	self->nome = nome;
 	self->idade = idade;
 
 	return self;

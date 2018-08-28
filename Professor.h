@@ -9,7 +9,7 @@
 
 #include "Pessoa.h"
 
-// tipo Professor com subtipo Pessoa
+// tipo Professor com supertipo Pessoa
 typedef struct Professor_ 
 {
 	Pessoa super;
