@@ -1,4 +1,3 @@
-# gcc -o oop IImprimir.h Object.h Pessoa.c Aluno.c Professor.c main.c
 TARGET = oop
 CC = gcc
 CCFLAGS = -Wall
