@@ -4,7 +4,7 @@
  * Descrição: Arquivo de implementação do tipo Pessoa
  * Autor: Tiago Martins (tiago.tsmweb@gmail.com)
  */
-#include "Pessoa.h"
+#include "pessoa.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -32,4 +32,3 @@ static void Pessoa_virtual_imprimi(Pessoa * const self)
 	printf("\t[>] Nome: %s\n", self->nome);
 	printf("\t[>] Idade: %d\n", self->idade);
 }
-

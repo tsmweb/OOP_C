@@ -4,7 +4,7 @@
  * Descrição: Arquivo de implementação do tipo Professor
  * Autor: Tiago Martins (tiago.tsmweb@gmail.com)
  */
-#include "Professor.h"
+#include "professor.h"
 
 #include <stdlib.h>
 #include <stdio.h>

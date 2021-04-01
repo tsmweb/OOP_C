@@ -2,13 +2,13 @@
  * Descrição: Método principal (main) que demonstra a utilização dos tipos definidos (Professor e Aluno) 
  * seguindo o paradigma de OOP.
  * 
- * Compilar: gcc -o oop IImprimir.h Object.h Pessoa.c Aluno.c Professor.c main.c
+ * Compilar: gcc -o oop imprimir.h object.h pessoa.c aluno.c professor.c main.c
  * 
  * Autor: Tiago Martins (tiago.tsmweb@gmail.com)
  */
-#include "Aluno.h"
-#include "Professor.h"
-#include "IImprimir.h"
+#include "aluno.h"
+#include "professor.h"
+#include "imprimir.h"
 
 #include <stdio.h>
 

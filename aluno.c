@@ -4,7 +4,7 @@
  * Descrição: Arquivo de implementação do tipo Aluno
  * Autor: Tiago Martins (tiago.tsmweb@gmail.com)
  */
-#include "Aluno.h"
+#include "aluno.h"
 
 #include <stdlib.h>
 #include <stdio.h>

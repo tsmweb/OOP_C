@@ -7,7 +7,7 @@
 #ifndef Pessoa_H
 #define Pessoa_H
 
-#include "Object.h"
+#include "object.h"
 
 // estrutura de métodos virtuais
 struct PessoaVtbl;

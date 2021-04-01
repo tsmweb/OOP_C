@@ -7,7 +7,7 @@
 #ifndef Professor_H
 #define Professor_H
 
-#include "Pessoa.h"
+#include "pessoa.h"
 
 // tipo Professor com supertipo Pessoa
 typedef struct Professor_ 

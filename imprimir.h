@@ -6,7 +6,7 @@
 #ifndef IImprimir_H
 #define IImprimir_H
 
-#include "Object.h"
+#include "object.h"
 
 // método da interface IImprimi
 typedef void (*Imprimir)(Object *instance);
