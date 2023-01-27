@@ -1,56 +1,56 @@
 /*
- * Descrição: Método principal (main) que demonstra a utilização dos tipos definidos (Professor e Aluno) 
- * seguindo o paradigma de OOP.
+ * Description: Main method (main) that demonstrates the use of defined types (Professor and Student) 
+ * following the OOP paradigm.
  * 
- * Compilar: gcc -o oop imprimir.h object.h pessoa.c aluno.c professor.c main.c
+ * To compile: gcc -o oop print.h object.h person.c student.c teacher.c main.c
  * 
- * Autor: Tiago Martins (tiago.tsmweb@gmail.com)
+ * Author: Tiago Martins (tiago.tsmweb@gmail.com)
  */
-#include "aluno.h"
-#include "professor.h"
-#include "imprimir.h"
+#include "student.h"
+#include "teacher.h"
+#include "print.h"
 
 #include <stdio.h>
 
-static inline void imprimi_override(Pessoa * const pessoa) 
+static inline void override_print(const Person* const person) 
 {
-	(pessoa->vptr->imprimi)(pessoa);
+	(person->vptr->print)(person);
 }
 
-static inline void imprimi(IImprimir imp)
+static inline void print(IPrint imp)
 {
-	imp.imprimi(imp.instance);
+	imp.print(imp.instance);
 }
 
-int main(int argc, char **argv) 
+int main(int argc, char** argv) 
 {
-	// objeto do tipo Professor
-	printf("[*] PROFESSOR \n");
-	Professor professor = Professor_new("Saulo", 45, "SO II", 2);
-	imprimi_override(&professor->super);
+	// Teacher type object
+	printf("[*] TEACHER \n");
+	Teacher* teacher = Teacher_new("Saulo", 45, "SO II", 2);
+	override_print(&teacher->super);
 	
-	printf("[*] PROFESSOR (interface)\n");
-	IImprimir iProfessor = {
-		(Object*)professor,
-		Professor_imprimi
+	printf("[*] TEACHER (interface)\n");
+	IPrint iTeacher = {
+		(Object*)teacher,
+		Teacher_print
 	};
 
-	imprimi(iProfessor);
-	Professor_free(professor);
+	print(iTeacher);
+	Teacher_free(teacher);
 	
-	// objeto do tipo Aluno
-	printf("[*] ALUNO\n");
-	Aluno aluno = Aluno_new("Jonas", 16, "2A", 9);
-	imprimi_override(&aluno->super);
+	// object of type Student
+	printf("[*] STUDENT\n");
+	Student* student = Student_new("Jonas", 16, "SO II", 9);
+	override_print(&student->super);
 
-	printf("[*] ALUNO (interface)\n");
-	IImprimir iAluno = {
-		(Object*)aluno,
-		Aluno_imprimi
+	printf("[*] STUDENT (interface)\n");
+	IPrint iStudent = {
+		(Object*)student,
+		Student_print
 	};
 
-	imprimi(iAluno);
-	Aluno_free(aluno);
+	print(iStudent);
+	Student_free(student);
 	
 	return 0;
 }

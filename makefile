@@ -14,14 +14,14 @@ $(TARGET): $(OBJS)
 #main.o: main.c
 #	$(CC) -c $(CCFLAGS) main.c -o main.o
 #
-#pessoa.o: pessoa.c
-#	$(CC) -c $(CCFLAGS) pessoa.c -o pessoa.o
+#person.o: person.c
+#	$(CC) -c $(CCFLAGS) person.c -o person.o
 #
-#aluno.o: aluno.c
-#	$(CC) -c $(CCFLAGS) aluno.c -o aluno.o
+#student.o: student.c
+#	$(CC) -c $(CCFLAGS) student.c -o student.o
 #
-#professor.o: professor.c
-#	$(CC) -c $(CCFLAGS) professor.c -o professor.o
+#teacher.o: teacher.c
+#	$(CC) -c $(CCFLAGS) teacher.c -o teacher.o
 %.o: %.c
 	$(CC) -c $(CCFLAGS) $^
 

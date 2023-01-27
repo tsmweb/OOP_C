@@ -1,12 +1,12 @@
 /*
- * Tipo: Object
- * Descrição: Arquivo de definição do tipo Object (tipo genérico)
- * Autor: Tiago Martins (tiago.tsmweb@gmail.com)
+ * Type: Object
+ * Description: Object type definition file (generic type)
+ * Author: Tiago Martins (tiago.tsmweb@gmail.com)
  */
 #ifndef Object_H
 #define Object_H
 
-// Tipo Object
+// Object Type
 typedef struct 
 {
 	char *klass;

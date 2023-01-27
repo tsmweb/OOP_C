@@ -1,3 +1,3 @@
-# Descrição
+# Description
 
-Exemplo de programação orientada a objetos (OOP) na linguagem C.
+Example of object-oriented programming (OOP) in the C language.
